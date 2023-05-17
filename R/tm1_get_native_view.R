@@ -17,7 +17,7 @@ tm1_get_native_view <- function(tm1_connection, cube="", view="", RowElementAsCo
   u4 <- tm1_httpport
   u5 <- "/api/v1/Cubes('"
   u6 <- cube
-  u7 <- "')/Views('"
+  u7 <- "')/PrivateViews('"
   u8 <- view
   u9 <- "')/tm1.Execute"
   u10 <- "?$expand=Axes($expand=Tuples($expand=Members($select=Name,UniqueName))),Cells($select=Value)"
